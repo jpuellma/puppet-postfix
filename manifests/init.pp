@@ -10,6 +10,8 @@
 #
 # [*inet_interfaces*]     - (string)
 #
+# [*inet_protocols*]      - (string)
+#
 # [*ldap*]                - (boolean) Whether to use LDAP
 #
 # [*ldap_base*]           - (string)
@@ -74,6 +76,7 @@
 class postfix (
   $alias_maps          = 'hash:/etc/aliases',
   $inet_interfaces     = 'all',
+  $inet_protocols      = 'all',
   $ldap                = false,
   $ldap_base           = undef,
   $ldap_host           = undef,
